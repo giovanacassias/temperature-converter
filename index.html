@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div class="container-item" id="item-1">
+                <h1>Enter temperature</h1>
+                <input autofocus type="number" id="degree" placeholder="º">
+                <div id="buttons">
+                    <button class="btn" onclick="toFahrenheit(number)">Cº<span class="material-symbols-outlined">
+                    arrow_right_alt</span>Fº</button>
+                    <button class="btn" onclick="toCelsious(number)">Fº<span class="material-symbols-outlined">
+                    arrow_right_alt</span>Cº</button>
+                </div>
+            </div>
+            <div class="container-item" id="item-2">
+                <h2 id="result">
+                    0º
+                </h2>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
